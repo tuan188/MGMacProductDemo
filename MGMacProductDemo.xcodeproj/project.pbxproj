@@ -7,10 +7,16 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		10AABDB0ADC1901B650843C3 /* libPods-MGMacProductDemo.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 41C0F50E5EB3E925CEF43509 /* libPods-MGMacProductDemo.a */; };
 		171811AD1C4F283100E99AAD /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 171811AC1C4F283100E99AAD /* AppDelegate.swift */; };
 		171811AF1C4F283100E99AAD /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 171811AE1C4F283100E99AAD /* ViewController.swift */; };
 		171811B11C4F283100E99AAD /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 171811B01C4F283100E99AAD /* Assets.xcassets */; };
 		171811B41C4F283100E99AAD /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 171811B21C4F283100E99AAD /* Main.storyboard */; };
+		175F39DE1C50852F00650762 /* Model.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 175F39DC1C50852F00650762 /* Model.xcdatamodeld */; };
+		175F39E31C50857900650762 /* ProductEntity+CoreDataProperties.m in Sources */ = {isa = PBXBuildFile; fileRef = 175F39E01C50857900650762 /* ProductEntity+CoreDataProperties.m */; };
+		175F39E41C50857900650762 /* ProductEntity.m in Sources */ = {isa = PBXBuildFile; fileRef = 175F39E21C50857900650762 /* ProductEntity.m */; };
+		175F39E91C5086CA00650762 /* Mapper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 175F39E81C5086CA00650762 /* Mapper.swift */; };
+		175F39EB1C5086E300650762 /* Product.swift in Sources */ = {isa = PBXBuildFile; fileRef = 175F39EA1C5086E300650762 /* Product.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -20,6 +26,17 @@
 		171811B01C4F283100E99AAD /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		171811B31C4F283100E99AAD /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		171811B51C4F283100E99AAD /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		175F39D71C50850E00650762 /* MGMacProductDemo-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "MGMacProductDemo-Bridging-Header.h"; sourceTree = "<group>"; };
+		175F39DD1C50852F00650762 /* Model.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = Model.xcdatamodel; sourceTree = "<group>"; };
+		175F39DF1C50857900650762 /* ProductEntity+CoreDataProperties.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "ProductEntity+CoreDataProperties.h"; sourceTree = "<group>"; };
+		175F39E01C50857900650762 /* ProductEntity+CoreDataProperties.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "ProductEntity+CoreDataProperties.m"; sourceTree = "<group>"; };
+		175F39E11C50857900650762 /* ProductEntity.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ProductEntity.h; sourceTree = "<group>"; };
+		175F39E21C50857900650762 /* ProductEntity.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ProductEntity.m; sourceTree = "<group>"; };
+		175F39E81C5086CA00650762 /* Mapper.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Mapper.swift; sourceTree = "<group>"; };
+		175F39EA1C5086E300650762 /* Product.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Product.swift; sourceTree = "<group>"; };
+		41C0F50E5EB3E925CEF43509 /* libPods-MGMacProductDemo.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-MGMacProductDemo.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		A05C8F9EE85EC37D8AFE007E /* Pods-MGMacProductDemo.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MGMacProductDemo.debug.xcconfig"; path = "Pods/Target Support Files/Pods-MGMacProductDemo/Pods-MGMacProductDemo.debug.xcconfig"; sourceTree = "<group>"; };
+		F174DFB4F98F0AE6C6E30B55 /* Pods-MGMacProductDemo.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MGMacProductDemo.release.xcconfig"; path = "Pods/Target Support Files/Pods-MGMacProductDemo/Pods-MGMacProductDemo.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -27,6 +44,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				10AABDB0ADC1901B650843C3 /* libPods-MGMacProductDemo.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -38,6 +56,8 @@
 			children = (
 				171811AB1C4F283100E99AAD /* MGMacProductDemo */,
 				171811AA1C4F283100E99AAD /* Products */,
+				7872BFA14BAA482981E2AC0F /* Pods */,
+				5674F10CE7D7F096E322537A /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -53,12 +73,69 @@
 			isa = PBXGroup;
 			children = (
 				171811AC1C4F283100E99AAD /* AppDelegate.swift */,
-				171811AE1C4F283100E99AAD /* ViewController.swift */,
-				171811B01C4F283100E99AAD /* Assets.xcassets */,
-				171811B21C4F283100E99AAD /* Main.storyboard */,
+				175F39D71C50850E00650762 /* MGMacProductDemo-Bridging-Header.h */,
 				171811B51C4F283100E99AAD /* Info.plist */,
+				171811B01C4F283100E99AAD /* Assets.xcassets */,
+				175F39DB1C50852000650762 /* Models */,
+				175F39E51C5085F000650762 /* Services */,
+				175F39E61C5085FA00650762 /* Repositories */,
+				175F39E71C50860400650762 /* UI */,
 			);
 			path = MGMacProductDemo;
+			sourceTree = "<group>";
+		};
+		175F39DB1C50852000650762 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				175F39DC1C50852F00650762 /* Model.xcdatamodeld */,
+				175F39DF1C50857900650762 /* ProductEntity+CoreDataProperties.h */,
+				175F39E01C50857900650762 /* ProductEntity+CoreDataProperties.m */,
+				175F39E11C50857900650762 /* ProductEntity.h */,
+				175F39E21C50857900650762 /* ProductEntity.m */,
+			);
+			name = Models;
+			sourceTree = "<group>";
+		};
+		175F39E51C5085F000650762 /* Services */ = {
+			isa = PBXGroup;
+			children = (
+				175F39E81C5086CA00650762 /* Mapper.swift */,
+				175F39EA1C5086E300650762 /* Product.swift */,
+			);
+			name = Services;
+			sourceTree = "<group>";
+		};
+		175F39E61C5085FA00650762 /* Repositories */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Repositories;
+			sourceTree = "<group>";
+		};
+		175F39E71C50860400650762 /* UI */ = {
+			isa = PBXGroup;
+			children = (
+				171811AE1C4F283100E99AAD /* ViewController.swift */,
+				171811B21C4F283100E99AAD /* Main.storyboard */,
+			);
+			name = UI;
+			sourceTree = "<group>";
+		};
+		5674F10CE7D7F096E322537A /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				41C0F50E5EB3E925CEF43509 /* libPods-MGMacProductDemo.a */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		7872BFA14BAA482981E2AC0F /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				A05C8F9EE85EC37D8AFE007E /* Pods-MGMacProductDemo.debug.xcconfig */,
+				F174DFB4F98F0AE6C6E30B55 /* Pods-MGMacProductDemo.release.xcconfig */,
+			);
+			name = Pods;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -68,9 +145,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 171811B81C4F283100E99AAD /* Build configuration list for PBXNativeTarget "MGMacProductDemo" */;
 			buildPhases = (
+				B29849744517AF74CBD858DC /* Check Pods Manifest.lock */,
 				171811A51C4F283100E99AAD /* Sources */,
 				171811A61C4F283100E99AAD /* Frameworks */,
 				171811A71C4F283100E99AAD /* Resources */,
+				855D7C307C0CF43BD9AE8260 /* Embed Pods Frameworks */,
+				05AE13544E76AFD10BE9BCE5 /* Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -126,6 +206,54 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		05AE13544E76AFD10BE9BCE5 /* Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-MGMacProductDemo/Pods-MGMacProductDemo-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		855D7C307C0CF43BD9AE8260 /* Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-MGMacProductDemo/Pods-MGMacProductDemo-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		B29849744517AF74CBD858DC /* Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		171811A51C4F283100E99AAD /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
@@ -133,6 +261,11 @@
 			files = (
 				171811AF1C4F283100E99AAD /* ViewController.swift in Sources */,
 				171811AD1C4F283100E99AAD /* AppDelegate.swift in Sources */,
+				175F39E41C50857900650762 /* ProductEntity.m in Sources */,
+				175F39E31C50857900650762 /* ProductEntity+CoreDataProperties.m in Sources */,
+				175F39E91C5086CA00650762 /* Mapper.swift in Sources */,
+				175F39DE1C50852F00650762 /* Model.xcdatamodeld in Sources */,
+				175F39EB1C5086E300650762 /* Product.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -232,25 +365,32 @@
 		};
 		171811B91C4F283100E99AAD /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = A05C8F9EE85EC37D8AFE007E /* Pods-MGMacProductDemo.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
 				COMBINE_HIDPI_IMAGES = YES;
 				INFOPLIST_FILE = MGMacProductDemo/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = truong.tuan.MGMacProductDemo;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "MGMacProductDemo/MGMacProductDemo-Bridging-Header.h";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 			};
 			name = Debug;
 		};
 		171811BA1C4F283100E99AAD /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = F174DFB4F98F0AE6C6E30B55 /* Pods-MGMacProductDemo.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
 				COMBINE_HIDPI_IMAGES = YES;
 				INFOPLIST_FILE = MGMacProductDemo/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = truong.tuan.MGMacProductDemo;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "MGMacProductDemo/MGMacProductDemo-Bridging-Header.h";
 			};
 			name = Release;
 		};
@@ -273,8 +413,22 @@
 				171811BA1C4F283100E99AAD /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		175F39DC1C50852F00650762 /* Model.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				175F39DD1C50852F00650762 /* Model.xcdatamodel */,
+			);
+			currentVersion = 175F39DD1C50852F00650762 /* Model.xcdatamodel */;
+			path = Model.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
 	};
 	rootObject = 171811A11C4F283000E99AAD /* Project object */;
 }
