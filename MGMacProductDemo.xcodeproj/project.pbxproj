@@ -17,6 +17,7 @@
 		175F39E41C50857900650762 /* ProductEntity.m in Sources */ = {isa = PBXBuildFile; fileRef = 175F39E21C50857900650762 /* ProductEntity.m */; };
 		175F39E91C5086CA00650762 /* Mapper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 175F39E81C5086CA00650762 /* Mapper.swift */; };
 		175F39EB1C5086E300650762 /* Product.swift in Sources */ = {isa = PBXBuildFile; fileRef = 175F39EA1C5086E300650762 /* Product.swift */; };
+		1792B0DB1C51D35900612C11 /* MainWindowController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1792B0DA1C51D35900612C11 /* MainWindowController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -34,6 +35,7 @@
 		175F39E21C50857900650762 /* ProductEntity.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ProductEntity.m; sourceTree = "<group>"; };
 		175F39E81C5086CA00650762 /* Mapper.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Mapper.swift; sourceTree = "<group>"; };
 		175F39EA1C5086E300650762 /* Product.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Product.swift; sourceTree = "<group>"; };
+		1792B0DA1C51D35900612C11 /* MainWindowController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MainWindowController.swift; sourceTree = "<group>"; };
 		41C0F50E5EB3E925CEF43509 /* libPods-MGMacProductDemo.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-MGMacProductDemo.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		A05C8F9EE85EC37D8AFE007E /* Pods-MGMacProductDemo.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MGMacProductDemo.debug.xcconfig"; path = "Pods/Target Support Files/Pods-MGMacProductDemo/Pods-MGMacProductDemo.debug.xcconfig"; sourceTree = "<group>"; };
 		F174DFB4F98F0AE6C6E30B55 /* Pods-MGMacProductDemo.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MGMacProductDemo.release.xcconfig"; path = "Pods/Target Support Files/Pods-MGMacProductDemo/Pods-MGMacProductDemo.release.xcconfig"; sourceTree = "<group>"; };
@@ -116,6 +118,7 @@
 			isa = PBXGroup;
 			children = (
 				171811AE1C4F283100E99AAD /* ViewController.swift */,
+				1792B0DA1C51D35900612C11 /* MainWindowController.swift */,
 				171811B21C4F283100E99AAD /* Main.storyboard */,
 			);
 			name = UI;
@@ -265,6 +268,7 @@
 				175F39E31C50857900650762 /* ProductEntity+CoreDataProperties.m in Sources */,
 				175F39E91C5086CA00650762 /* Mapper.swift in Sources */,
 				175F39DE1C50852F00650762 /* Model.xcdatamodeld in Sources */,
+				1792B0DB1C51D35900612C11 /* MainWindowController.swift in Sources */,
 				175F39EB1C5086E300650762 /* Product.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

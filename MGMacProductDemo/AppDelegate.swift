@@ -16,7 +16,10 @@ class AppDelegate: NSObject, NSApplicationDelegate {
         // Insert code here to initialize your application
         
         MagicalRecord.setupAutoMigratingCoreDataStack()
-        
+    }
+    
+    func applicationShouldTerminateAfterLastWindowClosed(sender: NSApplication) -> Bool {
+        return true
     }
 
     func applicationWillTerminate(aNotification: NSNotification) {
