@@ -8,20 +8,39 @@
 
 import Cocoa
 
+protocol MainWindowControllerDelegate: class {
+    func mainWindowControllerClickedAddButton()
+    func mainWindowControllerClickedDeleteButton()
+    func mainWindowControllerClickedEditButton()
+}
+
 class MainWindowController: NSWindowController {
+    
+    weak var delegate: MainWindowControllerDelegate?
 
     override func windowDidLoad() {
         super.windowDidLoad()
         
+        MagicalRecord.setupAutoMigratingCoreDataStack()
+        
         window?.titleVisibility = NSWindowTitleVisibility.Hidden
+        
+        let mainViewController = self.contentViewController as? MainViewController
+        mainViewController?.window = self.window
+        self.delegate = mainViewController
     }
     
     @IBAction func onAddButtonClicked(sender: NSToolbarItem) {
-        print("add")
+        delegate?.mainWindowControllerClickedAddButton()
     }
     
     @IBAction func onDeleteButtonClicked(sender: NSToolbarItem) {
-        print("delete")
+        delegate?.mainWindowControllerClickedDeleteButton()
     }
+    
+    @IBAction func onEditButtonClicked(sender: NSToolbarItem) {
+        delegate?.mainWindowControllerClickedEditButton()
+    }
+    
 
 }

@@ -9,7 +9,6 @@
 /* Begin PBXBuildFile section */
 		10AABDB0ADC1901B650843C3 /* libPods-MGMacProductDemo.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 41C0F50E5EB3E925CEF43509 /* libPods-MGMacProductDemo.a */; };
 		171811AD1C4F283100E99AAD /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 171811AC1C4F283100E99AAD /* AppDelegate.swift */; };
-		171811AF1C4F283100E99AAD /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 171811AE1C4F283100E99AAD /* ViewController.swift */; };
 		171811B11C4F283100E99AAD /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 171811B01C4F283100E99AAD /* Assets.xcassets */; };
 		171811B41C4F283100E99AAD /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 171811B21C4F283100E99AAD /* Main.storyboard */; };
 		175F39DE1C50852F00650762 /* Model.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 175F39DC1C50852F00650762 /* Model.xcdatamodeld */; };
@@ -17,13 +16,17 @@
 		175F39E41C50857900650762 /* ProductEntity.m in Sources */ = {isa = PBXBuildFile; fileRef = 175F39E21C50857900650762 /* ProductEntity.m */; };
 		175F39E91C5086CA00650762 /* Mapper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 175F39E81C5086CA00650762 /* Mapper.swift */; };
 		175F39EB1C5086E300650762 /* Product.swift in Sources */ = {isa = PBXBuildFile; fileRef = 175F39EA1C5086E300650762 /* Product.swift */; };
+		176FCF841C53903A00A4A914 /* ProductRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = 176FCF831C53903A00A4A914 /* ProductRepository.swift */; };
+		176FCF861C5391C200A4A914 /* ProductServiceProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 176FCF851C5391C200A4A914 /* ProductServiceProtocol.swift */; };
+		176FCF881C5391EC00A4A914 /* ProductService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 176FCF871C5391EC00A4A914 /* ProductService.swift */; };
 		1792B0DB1C51D35900612C11 /* MainWindowController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1792B0DA1C51D35900612C11 /* MainWindowController.swift */; };
+		17D20EF51C54E763008BEF31 /* MainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 17D20EF41C54E763008BEF31 /* MainViewController.swift */; };
+		17D20EF81C54E798008BEF31 /* ProductViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 17D20EF61C54E798008BEF31 /* ProductViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		171811A91C4F283100E99AAD /* MGMacProductDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MGMacProductDemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		171811AC1C4F283100E99AAD /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		171811AE1C4F283100E99AAD /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		171811B01C4F283100E99AAD /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		171811B31C4F283100E99AAD /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		171811B51C4F283100E99AAD /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -35,7 +38,12 @@
 		175F39E21C50857900650762 /* ProductEntity.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ProductEntity.m; sourceTree = "<group>"; };
 		175F39E81C5086CA00650762 /* Mapper.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Mapper.swift; sourceTree = "<group>"; };
 		175F39EA1C5086E300650762 /* Product.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Product.swift; sourceTree = "<group>"; };
+		176FCF831C53903A00A4A914 /* ProductRepository.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ProductRepository.swift; sourceTree = "<group>"; };
+		176FCF851C5391C200A4A914 /* ProductServiceProtocol.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ProductServiceProtocol.swift; sourceTree = "<group>"; };
+		176FCF871C5391EC00A4A914 /* ProductService.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ProductService.swift; sourceTree = "<group>"; };
 		1792B0DA1C51D35900612C11 /* MainWindowController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MainWindowController.swift; sourceTree = "<group>"; };
+		17D20EF41C54E763008BEF31 /* MainViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MainViewController.swift; sourceTree = "<group>"; };
+		17D20EF61C54E798008BEF31 /* ProductViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ProductViewController.swift; sourceTree = "<group>"; };
 		41C0F50E5EB3E925CEF43509 /* libPods-MGMacProductDemo.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-MGMacProductDemo.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		A05C8F9EE85EC37D8AFE007E /* Pods-MGMacProductDemo.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MGMacProductDemo.debug.xcconfig"; path = "Pods/Target Support Files/Pods-MGMacProductDemo/Pods-MGMacProductDemo.debug.xcconfig"; sourceTree = "<group>"; };
 		F174DFB4F98F0AE6C6E30B55 /* Pods-MGMacProductDemo.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MGMacProductDemo.release.xcconfig"; path = "Pods/Target Support Files/Pods-MGMacProductDemo/Pods-MGMacProductDemo.release.xcconfig"; sourceTree = "<group>"; };
@@ -103,6 +111,8 @@
 			children = (
 				175F39E81C5086CA00650762 /* Mapper.swift */,
 				175F39EA1C5086E300650762 /* Product.swift */,
+				176FCF851C5391C200A4A914 /* ProductServiceProtocol.swift */,
+				176FCF871C5391EC00A4A914 /* ProductService.swift */,
 			);
 			name = Services;
 			sourceTree = "<group>";
@@ -110,6 +120,7 @@
 		175F39E61C5085FA00650762 /* Repositories */ = {
 			isa = PBXGroup;
 			children = (
+				176FCF831C53903A00A4A914 /* ProductRepository.swift */,
 			);
 			name = Repositories;
 			sourceTree = "<group>";
@@ -117,9 +128,10 @@
 		175F39E71C50860400650762 /* UI */ = {
 			isa = PBXGroup;
 			children = (
-				171811AE1C4F283100E99AAD /* ViewController.swift */,
-				1792B0DA1C51D35900612C11 /* MainWindowController.swift */,
 				171811B21C4F283100E99AAD /* Main.storyboard */,
+				1792B0DA1C51D35900612C11 /* MainWindowController.swift */,
+				17D20EF41C54E763008BEF31 /* MainViewController.swift */,
+				17D20EF61C54E798008BEF31 /* ProductViewController.swift */,
 			);
 			name = UI;
 			sourceTree = "<group>";
@@ -262,12 +274,16 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				171811AF1C4F283100E99AAD /* ViewController.swift in Sources */,
 				171811AD1C4F283100E99AAD /* AppDelegate.swift in Sources */,
+				176FCF841C53903A00A4A914 /* ProductRepository.swift in Sources */,
+				17D20EF51C54E763008BEF31 /* MainViewController.swift in Sources */,
 				175F39E41C50857900650762 /* ProductEntity.m in Sources */,
 				175F39E31C50857900650762 /* ProductEntity+CoreDataProperties.m in Sources */,
+				176FCF861C5391C200A4A914 /* ProductServiceProtocol.swift in Sources */,
+				17D20EF81C54E798008BEF31 /* ProductViewController.swift in Sources */,
 				175F39E91C5086CA00650762 /* Mapper.swift in Sources */,
 				175F39DE1C50852F00650762 /* Model.xcdatamodeld in Sources */,
+				176FCF881C5391EC00A4A914 /* ProductService.swift in Sources */,
 				1792B0DB1C51D35900612C11 /* MainWindowController.swift in Sources */,
 				175F39EB1C5086E300650762 /* Product.swift in Sources */,
 			);

@@ -9,7 +9,7 @@
 import Cocoa
 
 class Product {
-    var id = NSUUID().UUIDString
+    var id = ""
     var creationDate = NSDate()
     var modificationDate = NSDate()
     var name = ""

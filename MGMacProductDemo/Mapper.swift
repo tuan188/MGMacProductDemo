@@ -33,7 +33,7 @@ class Mapper {
     
     class func productFromProductEntity(productEntity: ProductEntity) -> Product {
         let product = Product()
-        
+        mapProduct(product, fromProductEntity: productEntity)
         return product
     }
 }
